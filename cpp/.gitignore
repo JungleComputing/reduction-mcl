@@ -1,0 +1,7 @@
+/reduction
+/.depends
+/kernels.o
+/main.o
+/reduce
+/out_cpu
+/out_mcl
