@@ -21,7 +21,7 @@
 void reduceCPUKernel(const int n, float *sum, float *input) {
   *sum = 0.0;
   for (int i = 0; i < n; i++) {
-    *sum += input[i];
+    *sum += input[i] + 1;
   }
 }
 

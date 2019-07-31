@@ -27,6 +27,6 @@ import lib.atomics;
 
 perfect void reduce(int n, float sum, float[n] input) {
     foreach (int i in n threads) {
-	atomicAdd(sum, input[i]);
+	atomicAdd(sum, input[i] + 1);
     }
 }

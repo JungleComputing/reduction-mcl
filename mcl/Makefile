@@ -1,6 +1,6 @@
 PKG		= reduction
 SRC		= $(PKG)/reduction.mcl
-TGT		= xeon_e5620
+TGT		= fermi
 ENTRY_FUNCS	= reduce
 
 OUTPUT_DIR	= ../cpp

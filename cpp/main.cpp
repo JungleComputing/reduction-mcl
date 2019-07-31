@@ -37,14 +37,14 @@ int main(int argc, char **argv) {
 
   float *input = createInput<float>(n);
   cleanArray<float>(input, n);
-  float outputCPU;
-  float outputMCL;
+  float outputCPU = 0.0;
+  float outputMCL = 0.0;
 
   reduceCPU(n, &outputCPU, input);
   reduceMCL(n, &outputMCL, input);
   
-  checkOutput(&outputCPU, "cpu", 1);
-  checkOutput(&outputMCL, "mcl", 1);
+  printf("output CPU: %f\n", outputCPU);
+  printf("output MCL: %f\n", outputMCL);
 
   aligned_delete<float>(input);
 
